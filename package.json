@@ -1,0 +1,16 @@
+{
+  "name": "incoming-payment-webhooks",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "tsc -watch -p .",
+    "start": "npm run build && node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "zod": "^3.24.1"
+  }
+}
