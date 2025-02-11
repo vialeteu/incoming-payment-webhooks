@@ -7,6 +7,14 @@ Repository includes:
 - Example of verification of the request signature in `x-api-signature` header. Each webhook coming from VIALET is signed by RSA (type1) signature.  
 - Basic validation schema for the incoming request body.
 
+## Prerequisites
+
+Before you start installing dependencies, make sure that you have:
+
+```
+"node": ">=20.6.0"
+```
+
 ## Quick start
 
 1. Change the `WEBHOOK_URL` in the `.env` file to the URL you want to test.
