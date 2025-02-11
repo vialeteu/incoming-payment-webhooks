@@ -55,40 +55,6 @@ export function loadEnvFile(
 }
 
 /**
- * Loads and parses a JSON file
- * @param filePath - Path to the JSON file. Defaults to 'webhooks.json' in
- *                   current working directory
- * @returns Parsed JSON content
- * @throws {Error} If file cannot be read or parsed
- * @example
- * ```typescript
- * const data = loadJsonFile(); // Loads webhooks.json from current directory
- * const users = loadJsonFile<User[]>('./users.json'); // Load from specific path
- * ```
- */
-export function loadJsonFile<T = unknown>(
-  filePath: string = path.resolve(process.cwd(), 'webhooks.json')
-): T {
-  try {
-    const resolvedPath = path.resolve(process.cwd(), filePath);
-    const fileContents = fs.readFileSync(resolvedPath, 'utf8');
-    return JSON.parse(fileContents) as T;
-  } catch (error) {
-    const typedError = error as NodeJS.ErrnoException;
-
-    if (typedError.code === 'ENOENT') {
-      throw new Error(`JSON file not found: ${filePath}`);
-    }
-
-    if (error instanceof SyntaxError) {
-      throw new Error(`Invalid JSON in file: ${filePath}`);
-    }
-
-    throw error;
-  }
-}
-
-/**
  * Loads the content of a private key file
  * @param {string} filePath - The path to the private key file. Defaults to 
  *               './keys/private.pem' relative to the current working directory.
