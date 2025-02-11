@@ -1,9 +1,8 @@
-import { loadKeyFromFile } from '../file-loading';
-import { buildPrivateKey, buildPublicKey, sign, verify } from '../signatures';
-import axios, { type AxiosRequestConfig } from 'axios';
-import { toSignRequest } from '../transformers';
+import axios, {type AxiosRequestConfig} from 'axios';
+import {buildPrivateKey, buildPublicKey, sign, verify} from '../signatures';
+import {toSignRequest} from '../transformers';
+import {envVar, loadKeyFromFile} from '../utils';
 import type {WebhookRequest} from './types';
-import { envVar } from '../utils';
 
 const ONE_SECOND = 1000;
 
@@ -70,4 +69,3 @@ export async function verifyRequestSignature(
   const signature = request.headers['x-api-signature'];
   await verify(toSignRequest(request), publicKey, signature);
 }
-

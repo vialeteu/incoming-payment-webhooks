@@ -3,7 +3,7 @@
   "scripts": {
     "build": "tsc -p .",
     "dev": "tsc -watch -p .",
-    "start": "npm run build && node ./dist/index.js"
+    "start": "npm run build && node --env-file=.env ./dist/index.js"
   },
   "devDependencies": {
     "@types/node": "^22.13.1",

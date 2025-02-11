@@ -1,13 +1,9 @@
-import { loadEnvFile, loadJsonFile } from './services/file-loading';
 import { doHttpDelivery, verifyRequestSignature } from './services/requests';
 import { validateBody, type WebhookBody } from './services/validators';
+import webhooks from './webhooks.json';
 
 export const main = async () => {
-  loadEnvFile();
-
-  const webhooks = loadJsonFile<WebhookBody[]>();
-
-  for (const webhook of webhooks) {
+  for (const webhook of webhooks as WebhookBody[]) {
     validateBody(webhook);
     const webhookRequest = await doHttpDelivery(webhook);
     await verifyRequestSignature(webhookRequest);
