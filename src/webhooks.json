@@ -1,0 +1,285 @@
+[
+  {
+    "paymentId": "10619591",
+    "status": "COMPLETED",
+    "serviceType": "INCOMING_PAYMENT",
+    "messageId": "3e51b4d5-07ac-46e7-a3b3-12a02443fc08",
+    "amlDecision": "ACCEPTED",
+    "holderPartyId": "4e40e1b5-be1b-4443-bdb3-a0b1c02139d4",
+    "creditorAccountNumber": "LT363570020000000201",
+    "originalCreditorAccountNumber": "LT363570020000000201",
+    "debtorAccountNumber": "GB15HBUK40127612345678",
+    "id": "26fa1e8d-0df4-4b22-852b-d9b59ab9bb29",
+    "type": "PAYMENT",
+    "version": "v1",
+    "paymentData": {
+      "paymentId": "10619591",
+      "status": "COMPLETED",
+      "serviceType": "INCOMING_PAYMENT",
+      "initiatedAt": "2025-02-06T08:53:26.758",
+      "completedAt": "2025-02-06T08:54:01.322",
+      "valueDate": "2025-02-06",
+      "endToEndId": "YSqY3H4V45pTXI5lr",
+      "amount": 100,
+      "currency": "EUR",
+      "details": "For services",
+      "payer": {
+        "accountNumber": "GB15HBUK40127612345678",
+        "currency": "EUR",
+        "fees": {
+          "accountNumber": "LT363570020000000201",
+          "currency": "EUR",
+          "amount": 1
+        },
+        "name": "Jamie Carragher",
+        "bank": {
+          "name": "HSBC BANK PLC",
+          "address": "GB",
+          "code": "HBUKGB4BXXX"
+        }
+      },
+      "beneficiary": {
+        "name": "Sandbox UAB",
+        "accountNumber": "LT363570020000000201",
+        "address": "KONSTITUCIJOS, KONSTITUCIJOS VILNIUS, 09307 LT",
+        "country": "LT",
+        "bank": { "code": "VIPULT22XXX" }
+      },
+      "initiator": {
+        "type": "NOSTRO_MESSAGE",
+        "id": "system"
+      },
+      "hubMessageId": "3e51b4d5-07ac-46e7-a3b3-12a02443fc08",
+      "paymentType": "SEPA_INSTANT",
+      "amlDecision": "ACCEPTED",
+      "instantAcceptedCorrespondent": true,
+      "metadata": {
+        "responseId": "112413b2-ae7a-4cfa-bcc8-dcd52ed6f971",
+        "correlationId": "333cf696-6313-4060-bd6f-ed379fd36ab5",
+        "hasErrorMessage": false,
+        "messages": []
+      }
+    }
+  },
+  {
+    "paymentId": "10619592",
+    "status": "COMPLETED",
+    "serviceType": "INCOMING_PAYMENT",
+    "messageId": "ffeed8ab-fa27-4a11-9e1b-520ba4d4d1f4",
+    "amlDecision": "ACCEPTED",
+    "holderPartyId": "4e40e1b5-be1b-4443-bdb3-a0b1c02139d4",
+    "creditorAccountNumber": "LT363570020000000201",
+    "originalCreditorAccountNumber": "LT363570020000000201",
+    "debtorAccountNumber": "LT283250071598827863",
+    "id": "6bb3c984-12f5-40ab-86ce-1da107703c5c",
+    "type": "PAYMENT",
+    "version": "v1",
+    "paymentData": {
+      "paymentId": "10619592",
+      "status": "COMPLETED",
+      "serviceType": "INCOMING_PAYMENT",
+      "initiatedAt": "2025-02-07T13:09:15.168",
+      "completedAt": "2025-02-07T13:09:31.236",
+      "valueDate": "2025-02-10",
+      "endToEndId": "ijIZ8NdZil1tzKsVm",
+      "amount": 200,
+      "currency": "EUR",
+      "details": "Payment for order No 2851CG",
+      "payer": {
+        "accountNumber": "LT283250071598827863",
+        "currency": "EUR",
+        "fees": {
+          "accountNumber": "LT363570020000000201",
+          "currency": "EUR",
+          "amount": 1.5
+        },
+        "name": "Francesco Totti",
+        "bank": {
+          "name": "REVOLUT BANK UAB",
+          "address": "LT",
+          "code": "REVOLT21XXX"
+        }
+      },
+      "beneficiary": {
+        "name": "Sandbox UAB",
+        "accountNumber": "LT363570020000000201",
+        "address": "KONSTITUCIJOS, KONSTITUCIJOS VILNIUS, 09307 LT",
+        "country": "LT",
+        "bank": { "code": "VIPULT22XXX" }
+      },
+      "initiator": {
+        "type": "NOSTRO_MESSAGE",
+        "id": "system"
+      },
+      "hubMessageId": "ffeed8ab-fa27-4a11-9e1b-520ba4d4d1f4",
+      "paymentType": "SEPA_INSTANT",
+      "amlDecision": "ACCEPTED",
+      "instantAcceptedCorrespondent": true,
+      "metadata": {
+        "responseId": "39ea6b1a-d171-4c5e-97ba-b2b6f6eca545",
+        "correlationId": "99b3a3e5-f00b-4ac2-8224-930b507ef875",
+        "hasErrorMessage": false,
+        "messages": []
+      }
+    }
+  },
+  {
+    "paymentId": "10619593",
+    "status": "INITIATED",
+    "serviceType": "INCOMING_PAYMENT",
+    "messageId": "d8e51bd1-72f1-4da2-8fc2-a6aea6241eb7",
+    "holderPartyId": "4e40e1b5-be1b-4443-bdb3-a0b1c02139d4",
+    "creditorAccountNumber": "LT363570020000000201",
+    "originalCreditorAccountNumber": "LT363570020000000201",
+    "debtorAccountNumber": "DE69840500001325141883",
+    "id": "3e7497c0-a773-4946-9ba9-f6573b39add2",
+    "type": "PAYMENT",
+    "version": "v1",
+    "paymentData": {
+      "paymentId": "10619593",
+      "status": "INITIATED",
+      "serviceType": "INCOMING_PAYMENT",
+      "initiatedAt": "2025-02-07T22:05:34.829",
+      "valueDate": "2025-02-07",
+      "endToEndId": "75730762-01fe-4752-a112-c221c90a70",
+      "amount": 10,
+      "currency": "EUR",
+      "details": "Payment ref 90MBFBP6",
+      "payer": {
+        "accountNumber": "DE69840500001325141883",
+        "currency": "EUR",
+        "fees": {
+          "accountNumber": "LT363570020000000201",
+          "currency": "EUR",
+          "amount": 0.23
+        },
+        "name": "CHRISTINE LAGARDE",
+        "bank": {
+          "name": "RHOEN RENNSTEIG SPARKASSE",
+          "address": "DE",
+          "code": "HELADEF1RRS"
+        }
+      },
+      "beneficiary": {
+        "name": "Sandbox UAB",
+        "accountNumber": "LT363570020000000201",
+        "originalAccountNumber": "LT363570020000000201",
+        "bank": { "code": "VIPULT22XXX" }
+      },
+      "initiator": { "type": "NOSTRO_MESSAGE", "id": "system" },
+      "paymentType": "SEPA_INSTANT",
+      "instantAcceptedCorrespondent": true,
+      "metadata": {
+        "responseId": "a99e8bf3-8a15-4460-aec8-c028c60cc649",
+        "correlationId": "35dde77f-a7c5-4afd-b45f-750a3c7cfa6c",
+        "hasErrorMessage": false,
+        "messages": []
+      }
+    }
+  },
+  {
+    "paymentId": "10619594",
+    "status": "INITIATED",
+    "serviceType": "INCOMING_PAYMENT",
+    "messageId": "3a95f684-9183-4444-8457-adee1b77a812",
+    "holderPartyId": "4e40e1b5-be1b-4443-bdb3-a0b1c02139d4",
+    "creditorAccountNumber": "LT363570020000000201",
+    "originalCreditorAccountNumber": "LT363570020000000201",
+    "debtorAccountNumber": "GB15HBUK40127612345678",
+    "id": "c7835d32-d260-40f3-8322-28ff585b5492",
+    "type": "PAYMENT",
+    "version": "v1",
+    "paymentData": {
+      "paymentId": "10619594",
+      "status": "SUSPENDED",
+      "serviceType": "INCOMING_PAYMENT",
+      "initiatedAt": "2025-02-04T06:25:13.667",
+      "valueDate": "2025-02-04",
+      "endToEndId": "10wkTOiTspe2oy5QO",
+      "amount": 25.55,
+      "currency": "EUR",
+      "details": "Order No 823GKA",
+      "payer": {
+        "accountNumber": "GB15HBUK40127612345678",
+        "currency": "EUR",
+        "fees": {
+          "accountNumber": "LT363570020000000201",
+          "currency": "EUR",
+          "amount": 0.3
+        },
+        "name": "Jamie Carragher",
+        "bank": {
+          "name": "HSBC BANK PLC",
+          "address": "GB",
+          "code": "HBUKGB4BXXX"
+        }
+      },
+      "beneficiary": {
+        "name": "Sandbox UAB",
+        "accountNumber": "LT363570020000000201",
+        "originalAccountNumber": "LT363570020000000201",
+        "address": "KONSTITUCIJOS, KONSTITUCIJOS VILNIUS, 09307 LT",
+        "country": "LT",
+        "bank": { "code": "VIPULT22XXX" }
+      },
+      "initiator": { "type": "NOSTRO_MESSAGE", "id": "system" },
+      "paymentType": "SEPA_INSTANT",
+      "instantAcceptedCorrespondent": true,
+      "metadata": {
+        "responseId": "5660e230-456a-4dd7-8d81-38bbe93183ee",
+        "correlationId": "6778a4b0-d72c-4371-9da0-5ca3938e0be2",
+        "hasErrorMessage": false,
+        "messages": []
+      }
+    }
+  },
+  {
+    "paymentId": "10619595",
+    "status": "COMPLETED",
+    "serviceType": "INCOMING_PAYMENT",
+    "version": "v1",
+    "amlDecision": "REJECTED",
+    "holderPartyId": "4e40e1b5-be1b-4443-bdb3-a0b1c02139d4",
+    "creditorAccountNumber": "LT363570020000000201",
+    "originalCreditorAccountNumber": "LT363570020000000201",
+    "debtorAccountNumber": "LT283250071598827863",
+    "paymentData": {
+      "paymentId": "10619595",
+      "serviceType": "INCOMING_PAYMENT",
+      "status": "COMPLETED",
+      "endToEndId": "IFqY3H4V45pTZI6lp",
+      "amount": 200,
+      "currency": "EUR",
+      "details": "349IJX",
+      "payer": {
+        "accountNumber": "LT283250071598827863",
+        "currency": "EUR",
+        "fees": {
+          "accountNumber": "LT363570020000000201",
+          "currency": "EUR",
+          "amount": 1.5
+        },
+        "name": "Francesco Totti",
+        "bank": {
+          "name": "REVOLUT BANK UAB",
+          "address": "LT",
+          "code": "REVOLT21XXX"
+        }
+      },
+      "beneficiary": {
+        "name": "Sandbox UAB",
+        "accountNumber": "LT363570020000000201",
+        "address": "KONSTITUCIJOS, KONSTITUCIJOS VILNIUS, 09307 LT",
+        "country": "LT",
+        "bank": { "code": "VIPULT22XXX" }
+      },
+      "paymentType": "SEPA",
+      "metadata": {
+        "responseId": "212413b2-ae7a-4cfa-bcc8-dcd52ed6f971",
+        "correlationId": "433cf696-6313-4060-bd6f-ed379fd36ab5",
+        "hasErrorMessage": false,
+        "messages": []
+      }
+    }
+  }
+]
